@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<style type="text/css">
+		.fail{
+			background-color: #f44343;
+		}
+		.pass{
+			background-color: #8aff8a;
+		}
+	</style>
+	<script type="text/javascript">
+		var evaluate, count, pass_count, faild_count;
+		var pass_perc, faild_perc;
+		count = pass_count = faild_count = 0;
+		pass_perc = faild_perc =1;
+		evaluate = parseInt(window.prompt("Enter:\n 1- pass\n 2- faild\n or -1 to excit","1"));
+			while(evaluate!=-1){
+				if(evaluate==1)
+					pass_count=pass_count+1;
+				else if(evaluate==2)
+					faild_count=faild_count+1;
+					
+				count=count+1
+			evaluate=parseInt(window.prompt("Enter:\n1- pass\n2- faild\nor -1 to excit","1"));
+	}
+		pass_perc=(pass_count/count)*100;
+		faild_perc=(faild_count/count)*100;
+		document.writeln("<table border=\"1\"><thead><tr>");
+		document.writeln("<th colspan=\"3\">There are<th></tr>");
+		document.writeln("<tr><td></td><th>Pass</th><th>faild</th></tr></thead>");
+		document.writeln("<tbody><tr><td>#</td><td class='pass'>"+pass_count+"</td><td class='fail'>");
+		document.writeln(faild_count+"</td></tr><tr><td>%</td><td class='pass'>");
+		document.writeln(pass_perc+"</td><td class='fail'>"+faild_perc+"</td></tr></tbody></table>");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
