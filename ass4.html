@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var inputValue,fect;
+		
+		inputValue=parseInt(window.prompt("Enter a value to print its factorial or -1 to exit"));
+	
+		function factorial(num) {
+			var result = num;
+ 			if (num === 0 || num === 1){ 
+    			return 1; }
+  			while (num > 1) { 
+    				num--;
+    				result *= num;
+  			}
+  			return result;
+	}
+
+		c= factorial(inputValue);
+		document.write(c);
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

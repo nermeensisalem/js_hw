@@ -4,16 +4,18 @@
 	<title></title>
 	<script type="text/javascript">
 		var input , even , square;
-		even=2;
 		input=parseInt(window.prompt("enter a value.."));
+		even= 2;
 		while(true){
-			square=Math.pow(even,2);
-			if (square>input){
-				document.writeln("your input is "+input+"and the first even number its square exceed your input is"+even);
+			square= Math.pow(even,2);
+			if ( square > input ){
+				document.write("your input is "+input);
+				document.write("and the first even number its square exceed your input is"+even);
 				break;
-			even+=2;
+			
 
 			}
+			even+=2;
 		}
 	</script>
 </head>
